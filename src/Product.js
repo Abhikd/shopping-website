@@ -10,7 +10,7 @@ const Product = ({ productArray, handleClick, handleChange }) => {
         <h1 className='text-2xl font-semibold  text-[#00df9a]'>Products</h1>
         </div>
         <div className='max-w-[1000px] mx-auto flex flex-row justify-center pt-[10px] mb-10'>
-        <input className='rounded-sm p-1 w-[450px] mt-5'  type="text" placeholder='Search by category(Example- men, woman, electronic etc.)' onChange={(e) => setSearch(e.target.value)}/>
+        <input className='rounded-sm p-1 w-[450px] mt-5'  type="text" placeholder='Search by category(Example- men, woman, electronic etc.)' onChange={(e) => setSearch(e.target.value.toLowerCase())}/>
         </div>
         <div className=''>
         {
