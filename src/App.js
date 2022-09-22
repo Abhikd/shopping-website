@@ -34,7 +34,7 @@ function App() {
   useEffect(() =>{
     
     const productList = async () => {
-      await fetch('https://fakestoreapi.com/products?limit=30')
+      await fetch('https://fakestoreapi.com/products')
       .then(result => result.json())
       .then(data => {
         const productArray = data.map((product) => (
